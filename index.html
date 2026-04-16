@@ -136,7 +136,7 @@
         <div class="paper-links">
             
                         <code style="background-color: #f5f5f5; padding: 10px 16px; border-radius: 5px; font-size: 0.95em; color: #333; border: 1px solid #ddd; display: inline-block; margin: 0 10px;">pip install teledex</code>
-            <a href="papers/teledex.pdf" class="uk-button" style="border-radius: 5px; background-color: rgb(0, 0, 255); color: white;">
+            <a href="paper.pdf" class="uk-button" style="border-radius: 5px; background-color: rgb(0, 0, 255); color: white;">
                 <span uk-icon="file-pdf"></span> Paper
             </a>
 
@@ -166,33 +166,10 @@
         <div class="abstract-box">
             <div class="abstract-title">Abstract</div>
             <p>
-                <strong>teledex</strong> is an open-source system that enables the teleoperation of dexterous hands and robot end-effectors in simulation and the real world using commodity smartphones. The system allows the streaming of 6-DoF device poses as well hand state estimates from iOS devices and maps them to appropriate robot control frames. TeleDex supports both a hand-held phone-only mode and an optional 3D-printable hardware interface that extends its usability to dexterous robotic hands. The system is lightweight, requires no external tracking or calibration, and can provide haptic feedback to the operator. We demonstrate its utility across manipulation tasks that require dexterous control as well as reactive, low-latency responses.
+                Despite increasing dataset scale and model capacity, robot manipulation policies still struggle to generalize beyond their training distributions. As a result, deploying state-of-the-art policies in new environments, tasks, or robot embodiments often requires collecting additional demonstrations. Enabling this in real-world deployment settings requires tools that allow users to collect demonstrations quickly, affordably, and with minimal setup. We present <strong>TeleDex</strong>, an open-source system for intuitive teleoperation of dexterous hands and robotic manipulators using any readily available phone. The system streams low-latency 6-DoF wrist poses and articulated 21-DoF hand state estimates from the phone, which are retargeted to robot arms and multi-fingered hands without requiring external tracking infrastructure. TeleDex supports both a handheld phone-only mode and an optional 3D-printable hand-mounted interface for finger-level teleoperation. By lowering the hardware and setup barriers to dexterous teleoperation, TeleDex enables users to quickly collect demonstrations during deployment to support policy fine-tuning. We evaluate the system across simulation and real-world manipulation tasks, demonstrating its effectiveness as a unified scalable interface for robot teleoperation. All software and hardware designs, along with demonstration videos, are open-sourced.
             </p>
         </div>
 
-        <h2 class="section-title">Introduction</h2>
-
-        <p>
-            ....
-        
-        </p>
-
-        <!-- <div style="background-color: #f0f7ff; padding: 20px; border-radius: 8px; margin: 25px 0;">
-            <strong>Our contributions are:</strong>
-            <ul class="contributions-list">
-                <li>A lightweight, phone-based teleoperation system consisting of a Python library and a publicly available iOS application for intuitive robot teleoperation and data collection.</li>
-                <li>Support for dexterous hand teleoperation via a 3D-printable hand-mounted interface, with integration with Dex-Retarget to support diverse robotic hand kinematics.</li>
-                <li>Native integration with MuJoCo, enabling direct frame mapping to any given MJCF.</li>
-            </ul>
-        </div> -->
-
-        <div style="margin: 40px 0; padding: 20px; background-color: #f8f8f8; border-radius: 8px;">
-            <h3 style="font-size: 1.2em; margin-bottom: 15px;">BibTeX</h3>
-            <pre style="background-color: #fff; padding: 15px; border-radius: 5px; overflow-x: auto; font-size: 0.85em;">
-@inproceedings{
-    TBD
-}</pre>
-        </div>
 
     </div>
 
